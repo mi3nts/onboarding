@@ -18,6 +18,7 @@ It covers setup, workflow, best practices, and useful resources.
 ```bash
 sudo apt install kicad
 ```
+for more details on installion, watch this [video](https://www.youtube.com/watch?v=szu8dJoyikA&list=PLn6004q9oeqGl91KifK6xHGuqvXGb374G)
 
 ## Setting Up Libraries
 
@@ -89,15 +90,36 @@ Use global labels (like VCC, GND) for power nets instead of wiring them everywhe
 Each schematic component must be assigned a physical footprint.
 
    - Open: Tools → Assign Footprints.
-
-   - Match components:
-
-      - Resistors → 0603 or 0805 footprint.
-
-      - Capacitors → 0603 or 0805 footprint.
-
-      - ICs → Match datasheet package (e.g., QFN-32, SOIC-8).
-
+   - once here you can assign each symbol a footprint from your local footprint library
+   - for more details on navigating the UI, watch this [video](https://www.youtube.com/watch?v=JMa9q4YhRDk)
    - Save your work!
 
 Always double-check pinouts against datasheets — footprints are one of the most common mistakes in PCB design.
+
+## C. PCB Layout (PCBNew)
+
+1. Import schematic: Tools → Update PCB from Schematic.
+
+2. Place components:
+
+   - Group related parts together.
+
+   - Keep connectors near board edges.
+
+   - Place decoupling capacitors close to IC power pins.
+
+3. Route traces:
+
+   - Start with power and ground.
+
+   - Use 45° angles, not 90°.
+
+   - Keep traces short and direct.
+
+4. Add ground plane: Add Filled Zone → GND.
+
+   - Run DRC (Design Rule Check) to find clearance/trace width issues.
+
+Route critical nets first (clocks, power lines, high-speed signals) before filling in general routing.
+
+
