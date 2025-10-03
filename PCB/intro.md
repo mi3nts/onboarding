@@ -257,6 +257,32 @@ Here’s a quick glossary of terms you’ll hear a lot in PCB design:
 - **Ground Plane** → A filled copper area connected to ground.  
 
 ---
-work section
+# Starter Project: LM555 Blinky LED Board
+
+Welcome to your first MINTS PCB design project!  
+In this tutorial, you’ll design a simple PCB using the **LM555 timer IC** in **astable mode** to blink an LED.  
+This project is small but covers the **entire PCB workflow**: schematic → PCB layout → silkscreen → BOM → Gerbers.
+
+---
+
+## Bill of Materials (BOM)
+
+| Quantity | Component              | Value / Notes              | Package |
+|----------|------------------------|----------------------------|---------|
+| 1        | LM555 Timer IC         | DIP-8                      | DIP-8   |
+| 1        | Resistor R1            | 1 kΩ                       | Through-hole |
+| 1        | Resistor R2            | 10 kΩ                      | Through-hole |
+| 1        | Capacitor C1           | 10 µF electrolytic         | Radial   |
+| 1        | Capacitor C2           | 100 nF ceramic (decoupling)| Radial   |
+| 1        | LED                    | Any color                  | 5mm LED |
+| 1        | Resistor (LED)         | 330 Ω – 470 Ω              | Through-hole |
+| 1        | Pin Header or Screw Terminal | Power Input (5V, GND) | 2-pin   |
+| 1 (opt.) | DIP-8 Socket           | For LM555 IC               | DIP-8   |
+| 2 (opt.) | Mounting holes         | For enclosure              | M3 hole |
+
+---
+
+
+
 
 
