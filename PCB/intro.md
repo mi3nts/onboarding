@@ -55,6 +55,8 @@ KiCAD supports plugins to make design easier. Some recommended plugins:
 
 Install plugins via the Plugin & Content Manager (KiCAD 7+), or manually copy them into the ~/.local/share/kicad folder (Linux) or equivalent on Windows/macOS
 
+---
+
 # 2. General KiCAD Workflow Overview
 
 Designing a PCB in KiCAD generally follows this four-stage workflow:
@@ -67,6 +69,8 @@ Designing a PCB in KiCAD generally follows this four-stage workflow:
 
    4. Fabrication Outputs – Generate files for manufacturing and assembly.
       ![General Workflow](workflow.png)
+
+---
 
 # 3. Detailed Workflow
 
@@ -179,4 +183,83 @@ The iBOM plugin creates a **clickable, interactive BOM** with board previews, wh
 This is very useful when soldering by hand or debugging, since you can search for a component and instantly locate it on the PCB.  
 
 ---
+
+# 6. Customization and Terminology  
+
+As you get more comfortable with KiCAD, you’ll need to create **custom components**, import special footprints, and adding **MINTS logo** to your PCB. This section explains how.  
+
+---
+
+## A. Creating Custom Symbols  
+
+Symbols represent components in the **schematic editor**. If a part you need doesn’t exist in the standard libraries:  
+
+1. Open the **Symbol Editor**:  
+   - **Tools → Symbol Editor** (from schematic view).  
+2. Create a new library (if you don’t already have one).  
+3. Add a **new symbol**:  
+   - Define pins with proper numbering and electrical type.  
+   - Add fields (name, value, footprint association).  
+   - Draw the symbol body (rectangle, circle, etc.).  
+4. Save to your **personal library** (separate from KiCAD default libraries).  
+
+⚡ **Tip:** Always double-check pin numbering with the part’s **datasheet** before using your symbol in a design.  
+
+---
+
+## B. Importing or Creating Custom Footprints  
+
+Footprints define the **physical layout** of a part on the PCB.  
+
+1. Open the **Footprint Editor**:  
+   - **Tools → Footprint Editor** (from PCBNew).  
+2. Create a new footprint:  
+   - Place pads (SMD, through-hole).  
+   - Define courtyard, fab layer, and 3D model if available.  
+   - Name footprint clearly (e.g., `QFN-32-0.5mm`).  
+3. Importing footprints:  
+   - Download `.kicad_mod` or `.pretty` libraries (common from GitHub repos, manufacturer sites).  
+   - Add them via **Preferences → Manage Footprint Libraries**.  
+
+⚡ **Tip:** Manufacturers like **Texas Instruments, Microchip, ST** often provide KiCAD footprint libraries or 3D models for their parts.  
+
+---
+
+## C. Adding Custom Silkscreens (Logos & Graphics)  
+
+Silkscreen is the **printed text/graphics** on the top/bottom of a PCB (white ink on real boards). You can add **logos, labels, or artwork**:  
+
+1. Prepare your logo/graphic in **SVG** format (or monochrome bitmap).  
+2. Use the plugin **Bitmap2Component** (bundled with KiCAD):  
+   - Convert the image to a footprint or graphic.  
+   - Place it on the **Silkscreen Layer (F.SilkS / B.SilkS)**.  
+3. Alternatively, draw text and shapes directly in **PCBNew** on silkscreen layers.  
+
+⚡ **Tip:** Keep silkscreen clear of pads and vias, otherwise the fab house may clip or delete it.  
+
+---
+
+## 📖 D. General Terminology  
+
+Here’s a quick glossary of terms you’ll hear a lot in PCB design:  
+
+- **Schematic (SCH)** → The logical circuit diagram.  
+- **Symbol** → A 2D schematic representation of a component.  
+- **Footprint** → The physical pad layout for a component.  
+- **Net** → A logical electrical connection (wire).  
+- **ERC (Electrical Rules Check)** → Verifies schematic errors.  
+- **DRC (Design Rules Check)** → Verifies PCB spacing, clearances, etc.  
+- **Gerbers** → Industry-standard files used by PCB manufacturers to fabricate boards.  
+- **BOM (Bill of Materials)** → A list of all components used in a design.  
+- **Silkscreen** → Printed text/graphics on PCB surface (labels, logos).  
+- **Copper Layer** → The conductive trace layer of the PCB.  
+- **Via** → A plated hole connecting copper layers.  
+- **Ground Plane** → A filled copper area connected to ground.  
+
+---
+
+# 🌍 7. Next Steps for New Members  
+
+(continues as before…)  
+
 
