@@ -124,4 +124,62 @@ Always double-check pinouts against datasheets — footprints are one of the mos
 
 Route critical nets first (clocks, power lines, high-speed signals) before filling in general routing.
 
+---
+
+# 📦 4. Generating Gerber and BOM Files with Plugins  
+
+In MINTS, we recommend using plugins to streamline the process of exporting **Gerber files** (for fabrication) and **BOM files** (for assembly).  
+
+Two key plugins you should install and use are:  
+
+- **NextPCB Plugin** → simplifies Gerber file generation and upload.  
+- **Interactive HTML BOM (iBOM)** → generates an interactive bill of materials for assembly and debugging.  
+
+---
+
+## 🖨️ A. NextPCB Plugin for Gerber Files  
+
+1. Open your PCB in **PCBNew**.  
+2. Go to **Tools → External Plugins → Plugin and Content Manager**.  
+3. Search for **NextPCB** and install the plugin.  
+4. After installation, you’ll see a **NextPCB button** in PCBNew.  
+5. Click it, and the plugin will:  
+   - Automatically generate the required **Gerber files** and **drill files**.  
+   - Package them into a `.zip` file.  
+   - Open NextPCB’s website for order submission (optional).  
+
+⚡ **Tip:** Even if you use a different manufacturer (e.g., JLCPCB, PCBWay), you can still use the NextPCB plugin just to generate the correctly formatted Gerber `.zip`.  
+
+---
+
+## 📑 B. Interactive HTML BOM (iBOM)  
+
+The iBOM plugin creates a **clickable, interactive BOM** with board previews, which is extremely useful for assembling and testing boards.  
+
+### Installing iBOM  
+
+1. Open **Tools → External Plugins → Plugin and Content Manager**.  
+2. Search for **InteractiveHtmlBom** and install it.  
+3. Restart KiCAD if necessary.  
+
+### Using iBOM  
+
+1. In **PCBNew**, go to:  
+   - **Tools → External Plugins → Interactive HTML BOM**  
+2. Configure options:  
+   - Select output as `HTML`.  
+   - Include footprints, references, and component values.  
+   - Enable highlighting when clicking components.  
+3. Export → This will generate an `.html` file in your project directory.  
+4. Open the `.html` file in your browser:  
+   - Left pane → BOM list.  
+   - Right pane → PCB preview (clicking a part highlights it).  
+
+⚡ **Tip:** This is very useful when soldering by hand or debugging, since you can search for a component and instantly locate it on the PCB.  
+
+---
+
+# 📚 5. Best Practices at MINTS  
+
+(continues from earlier…)  
 
