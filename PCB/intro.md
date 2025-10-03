@@ -179,7 +179,3 @@ The iBOM plugin creates a **clickable, interactive BOM** with board previews, wh
 
 ---
 
-# 📚 5. Best Practices at MINTS  
-
-(continues from earlier…)  
-
