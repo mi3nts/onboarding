@@ -149,6 +149,7 @@ Two key plugins you should install and use are:
    - Open NextPCB’s website for order submission (optional).  
 
 Even if you use a different manufacturer (e.g., JLCPCB, PCBWay), you can still use the NextPCB plugin just to generate the correctly formatted Gerber `.zip`.  
+For more details on generating gerber files, watch this [video](https://www.youtube.com/watch?v=C_UdqlUmDNA)
 
 ---
 
