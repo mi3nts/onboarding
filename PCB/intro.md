@@ -55,9 +55,9 @@ KiCAD supports plugins to make design easier. Some recommended plugins:
 
 Install plugins via the Plugin & Content Manager (KiCAD 7+), or manually copy them into the ~/.local/share/kicad folder (Linux) or equivalent on Windows/macOS
 
-# 2. KiCAD Workflow Overview
+# 2. General KiCAD Workflow Overview
 
-Designing a PCB in KiCAD follows this four-stage workflow:
+Designing a PCB in KiCAD generally follows this four-stage workflow:
 
    1. Schematic Capture (Eeschema) – Draw your circuit.
 
@@ -84,6 +84,7 @@ Designing a PCB in KiCAD follows this four-stage workflow:
    6. Run ERC (Electrical Rules Check) to catch errors.
 
 Use global labels (like VCC, GND) for power nets instead of wiring them everywhere.
+If you want your schematic to look more presentable, watch this [video](https://www.youtube.com/watch?v=szu8dJoyikA&list=PLn6004q9oeqGl91KifK6xHGuqvXGb374G)
 
 ## B. Assigning Footprints
 
