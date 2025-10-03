@@ -1,6 +1,5 @@
 # MINTS PCB Onboarding with KiCAD
 
-# welcome to MINTS!
 
 This document is a guide to learn about using KiCAD software for PCB design. For even more details you can also consult the textbook: [KiCAD Like A Pro](https://www.gods69.com/download/KiCadLikeaPro3e_Course_Companion.pdf)
 
