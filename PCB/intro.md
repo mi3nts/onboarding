@@ -235,7 +235,7 @@ Silkscreen is the **printed text/graphics** on the top/bottom of a PCB (white in
    - Place it on the **Silkscreen Layer (F.SilkS / B.SilkS)**.  
 3. Alternatively, draw text and shapes directly in **PCBNew** on silkscreen layers.  
 
-⚡ **Tip:** Keep silkscreen clear of pads and vias, otherwise the fab house may clip or delete it.  
+**Tip:** Keep silkscreen clear of pads and vias, otherwise the fab house may clip or delete it.  
 
 ---
 
