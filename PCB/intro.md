@@ -130,7 +130,7 @@ Route critical nets first (clocks, power lines, high-speed signals) before filli
 
 ---
 
-# 📦 4. Generating Gerber and BOM Files with Plugins  
+# 4. Generating Gerber and BOM Files with Plugins  
 
 In MINTS, we recommend using plugins to streamline the process of exporting **Gerber files** (for fabrication) and **BOM files** (for assembly).  
 
@@ -141,7 +141,7 @@ Two key plugins you should install and use are:
 
 ---
 
-## 🖨️ A. NextPCB Plugin for Gerber Files  
+## A. NextPCB Plugin for Gerber Files  
 
 1. Open your PCB in **PCBNew**.  
 2. Go to **Tools → External Plugins → Plugin and Content Manager**.  
@@ -157,7 +157,7 @@ For more details on generating gerber files, watch this [video](https://www.yout
 
 ---
 
-## 📑 B. Interactive HTML BOM (iBOM)  
+## B. Interactive HTML BOM (iBOM)  
 
 The iBOM plugin creates a **clickable, interactive BOM** with board previews, which is extremely useful for assembling and testing boards.  
 
@@ -239,7 +239,7 @@ Silkscreen is the **printed text/graphics** on the top/bottom of a PCB (white in
 
 ---
 
-## 📖 D. General Terminology  
+## D. General Terminology  
 
 Here’s a quick glossary of terms you’ll hear a lot in PCB design:  
 
@@ -257,9 +257,6 @@ Here’s a quick glossary of terms you’ll hear a lot in PCB design:
 - **Ground Plane** → A filled copper area connected to ground.  
 
 ---
-
-# 🌍 7. Next Steps for New Members  
-
-(continues as before…)  
+work section
 
 
