@@ -267,7 +267,7 @@ This project is your first PCB design in KiCAD. The goal is to design, layout, a
 
 ---
 
-## 🎯 Expectations
+## Expectations
 By the end of this project, you should be able to:
 - Create a schematic in KiCAD using the LM555 and supporting components.  
 - Assign appropriate footprints to all symbols.  
@@ -277,7 +277,7 @@ By the end of this project, you should be able to:
 
 ---
 
-## 📦 Required Components
+## Required Components
 - **LM555 Timer (DIP-8)**  
 - **Resistors:** 1kΩ, 10kΩ, 330Ω  
 - **Capacitors:** 10µF electrolytic, 100nF ceramic  
@@ -288,7 +288,7 @@ By the end of this project, you should be able to:
 
 ---
 
-## 🔌 Circuit Overview
+## Circuit Overview
 - LM555 wired in **astable mode**.  
 - Timing set by R1, R2, and C1.  
 - Output drives LED through a resistor.  
