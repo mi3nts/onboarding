@@ -7,7 +7,7 @@ It covers setup, workflow, best practices, and useful resources.
 
 ---
 
-1. Setting Up KiCAD  
+# 1. Setting Up KiCAD  
 
 ## Installing KiCAD  
 
