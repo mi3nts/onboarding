@@ -203,7 +203,7 @@ Symbols represent components in the **schematic editor**. If a part you need doe
    - Draw the symbol body (rectangle, circle, etc.).  
 4. Save to your **personal library** (separate from KiCAD default libraries).  
 
-⚡ **Tip:** Always double-check pin numbering with the part’s **datasheet** before using your symbol in a design.  
+**Tip:** Always double-check pin numbering with the part’s **datasheet** before using your symbol in a design.  
 
 ---
 
@@ -221,7 +221,7 @@ Footprints define the **physical layout** of a part on the PCB.
    - Download `.kicad_mod` or `.pretty` libraries (common from GitHub repos, manufacturer sites).  
    - Add them via **Preferences → Manage Footprint Libraries**.  
 
-⚡ **Tip:** Manufacturers like **Texas Instruments, Microchip, ST** often provide KiCAD footprint libraries or 3D models for their parts.  
+**Tip:** Manufacturers like **Texas Instruments, Microchip, ST** often provide KiCAD footprint libraries or 3D models for their parts.  
 
 ---
 
