@@ -67,6 +67,7 @@ Designing a PCB in KiCAD follows this four-stage workflow:
    4. Fabrication Outputs – Generate files for manufacturing and assembly.
 
 # 3. Detailed Workflow
+
 ## A. Schematic Design
 
    1. Start a new project: File → New Project.
@@ -83,20 +84,20 @@ Designing a PCB in KiCAD follows this four-stage workflow:
 
 Use global labels (like VCC, GND) for power nets instead of wiring them everywhere.
 
-B. Assigning Footprints
+## B. Assigning Footprints
 
 Each schematic component must be assigned a physical footprint.
 
-Open: Tools → Assign Footprints.
+   - Open: Tools → Assign Footprints.
 
-Match components:
+   - Match components:
 
-Resistors → 0603 or 0805 footprint.
+      - Resistors → 0603 or 0805 footprint.
 
-Capacitors → 0603 or 0805 footprint.
+      - Capacitors → 0603 or 0805 footprint.
 
-ICs → Match datasheet package (e.g., QFN-32, SOIC-8).
+      - ICs → Match datasheet package (e.g., QFN-32, SOIC-8).
 
-Save your work!
+   - Save your work!
 
-⚡ Tip: Always double-check pinouts against datasheets — footprints are one of the most common mistakes in PCB design.
+Always double-check pinouts against datasheets — footprints are one of the most common mistakes in PCB design.
