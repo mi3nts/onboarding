@@ -66,6 +66,7 @@ Designing a PCB in KiCAD generally follows this four-stage workflow:
    3. PCB Layout (PCBNew) – Arrange components and route traces.
 
    4. Fabrication Outputs – Generate files for manufacturing and assembly.
+![Alt text](PCB/workflow "General Workflow")
 
 # 3. Detailed Workflow
 
