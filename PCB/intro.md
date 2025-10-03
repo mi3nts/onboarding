@@ -40,3 +40,63 @@ Add all symbol files to the Symbol Library.
 Add all footprint files to the Footprint Library.
 
 Always verify the footprint dimensions against the part’s datasheet before ordering boards!
+
+## Setting Up Plugins
+
+KiCAD supports plugins to make design easier. Some recommended plugins:
+ - PCBWay integration → automates the process of preparing and submitting PCB designs for manufacturing and assembly with the company PCBWay
+
+ - Interactive HTML BOM → generates interactive BOM files for assembly.
+
+ - Fabrication Toolkit → automates the process of generating manufacturing files for printed circuit boards (PCBs)
+   
+ - NextPCB → simplifies the PCB ordering process by allowing users to get real-time quotations and place orders for fabrication directly within the KiCad software
+
+Install plugins via the Plugin & Content Manager (KiCAD 7+), or manually copy them into the ~/.local/share/kicad folder (Linux) or equivalent on Windows/macOS
+
+# 2. KiCAD Workflow Overview
+
+Designing a PCB in KiCAD follows this four-stage workflow:
+
+   1. Schematic Capture (Eeschema) – Draw your circuit.
+
+   2. Footprint Assignment – Link schematic symbols to physical packages.
+
+   3. PCB Layout (PCBNew) – Arrange components and route traces.
+
+   4. Fabrication Outputs – Generate files for manufacturing and assembly.
+
+# 3. Detailed Workflow
+## A. Schematic Design
+
+   1. Start a new project: File → New Project.
+
+   2. Add components (A hotkey).
+
+   3. Wire connections (W hotkey).
+
+   4. Use labels (L) instead of drawing long wires.
+
+   5. Annotate the schematic: Tools → Annotate Schematic.
+
+   6. Run ERC (Electrical Rules Check) to catch errors.
+
+Use global labels (like VCC, GND) for power nets instead of wiring them everywhere.
+
+B. Assigning Footprints
+
+Each schematic component must be assigned a physical footprint.
+
+Open: Tools → Assign Footprints.
+
+Match components:
+
+Resistors → 0603 or 0805 footprint.
+
+Capacitors → 0603 or 0805 footprint.
+
+ICs → Match datasheet package (e.g., QFN-32, SOIC-8).
+
+Save your work!
+
+⚡ Tip: Always double-check pinouts against datasheets — footprints are one of the most common mistakes in PCB design.
