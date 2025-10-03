@@ -39,4 +39,4 @@ Go to:
 Add all symbol files to the Symbol Library.
 Add all footprint files to the Footprint Library.
 
- - ⚡ Tip: Always verify the footprint dimensions against the part’s datasheet before ordering boards!
+Always verify the footprint dimensions against the part’s datasheet before ordering boards!
