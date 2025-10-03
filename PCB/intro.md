@@ -21,24 +21,22 @@ sudo apt install kicad
 
 ## Setting Up Libraries
 
-- Libraries contain the symbols (schematic components) and footprints (physical pads and packages) needed for PCB design.
+Libraries contain the symbols (schematic components) and footprints (physical pads and packages) needed for PCB design.
+Clone the following commonly used libraries:
 
-- Clone the following commonly used libraries:
+  1. Digi-Key Symbol/Footprint Library
 
-Digi-Key Symbol/Footprint Library
-
-SparkFun Symbol/Footprint Library
+  2. SparkFun Symbol/Footprint Library
 
 Add libraries in KiCAD:
 
 Go to:
 
-Preferences → Manage Symbol Libraries
+ - Preferences → Manage Symbol Libraries
 
-Preferences → Manage Footprint Libraries
+ - Preferences → Manage Footprint Libraries
 
 Add all symbol files to the Symbol Library.
-
 Add all footprint files to the Footprint Library.
 
-⚡ Tip: Always verify the footprint dimensions against the part’s datasheet before ordering boards!
+ - ⚡ Tip: Always verify the footprint dimensions against the part’s datasheet before ordering boards!
