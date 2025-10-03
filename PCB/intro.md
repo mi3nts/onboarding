@@ -148,7 +148,7 @@ Two key plugins you should install and use are:
    - Package them into a `.zip` file.  
    - Open NextPCB’s website for order submission (optional).  
 
-⚡ **Tip:** Even if you use a different manufacturer (e.g., JLCPCB, PCBWay), you can still use the NextPCB plugin just to generate the correctly formatted Gerber `.zip`.  
+Even if you use a different manufacturer (e.g., JLCPCB, PCBWay), you can still use the NextPCB plugin just to generate the correctly formatted Gerber `.zip`.  
 
 ---
 
@@ -175,7 +175,7 @@ The iBOM plugin creates a **clickable, interactive BOM** with board previews, wh
    - Left pane → BOM list.  
    - Right pane → PCB preview (clicking a part highlights it).  
 
-⚡ **Tip:** This is very useful when soldering by hand or debugging, since you can search for a component and instantly locate it on the PCB.  
+This is very useful when soldering by hand or debugging, since you can search for a component and instantly locate it on the PCB.  
 
 ---
 
