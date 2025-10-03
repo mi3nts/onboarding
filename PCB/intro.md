@@ -263,26 +263,36 @@ Welcome to your first MINTS PCB design project!
 In this tutorial, you’ll design a simple PCB using the **LM555 timer IC** in **astable mode** to blink an LED.  
 This project is small but covers the **entire PCB workflow**: schematic → PCB layout → silkscreen → BOM → Gerbers.
 
----
-
-## Bill of Materials (BOM)
-
-| Quantity | Component              | Value / Notes              | Package |
-|----------|------------------------|----------------------------|---------|
-| 1        | LM555 Timer IC         | DIP-8                      | DIP-8   |
-| 1        | Resistor R1            | 1 kΩ                       | Through-hole |
-| 1        | Resistor R2            | 10 kΩ                      | Through-hole |
-| 1        | Capacitor C1           | 10 µF electrolytic         | Radial   |
-| 1        | Capacitor C2           | 100 nF ceramic (decoupling)| Radial   |
-| 1        | LED                    | Any color                  | 5mm LED |
-| 1        | Resistor (LED)         | 330 Ω – 470 Ω              | Through-hole |
-| 1        | Pin Header or Screw Terminal | Power Input (5V, GND) | 2-pin   |
-| 1 (opt.) | DIP-8 Socket           | For LM555 IC               | DIP-8   |
-| 2 (opt.) | Mounting holes         | For enclosure              | M3 hole |
+This project is your first PCB design in KiCAD. The goal is to design, layout, and export a working board that blinks an LED using an LM555 timer in **astable mode**.  
 
 ---
 
+## 🎯 Expectations
+By the end of this project, you should be able to:
+- Create a schematic in KiCAD using the LM555 and supporting components.  
+- Assign appropriate footprints to all symbols.  
+- Arrange and route a compact PCB.  
+- Add readable silkscreen labels and a board outline.  
+- Generate Gerber files and a BOM using the recommended plugins.  
 
+---
+
+## 📦 Required Components
+- **LM555 Timer (DIP-8)**  
+- **Resistors:** 1kΩ, 10kΩ, 330Ω  
+- **Capacitors:** 10µF electrolytic, 100nF ceramic  
+- **1x LED**  
+- **Pin header (2-pin) for power**  
+
+*(Optional: IC socket, test points, on/off switch)*  
+
+---
+
+## 🔌 Circuit Overview
+- LM555 wired in **astable mode**.  
+- Timing set by R1, R2, and C1.  
+- Output drives LED through a resistor.  
+- Power via 5V header.  
 
 
 
